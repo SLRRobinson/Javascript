@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <body>
+<p id="demo"></p>
+
 <script type="text/javascript">
 <!--This is single line comment -->
 /*
@@ -10,24 +12,35 @@ The following command write output the text into the HTML code. -->
 
 var colors= ["Red","Blue","Green"];
 
-
+window.alert(colors);
 
 var firstName="David";
 var name=" Robinson" ;
-
-// objects in JS
-var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
 
 var num1=12;
 var num2=23;
 var total= num1+ num2;
 
 document.writeln(total);
-document.writeln(person);
-alert(total);
+document.writeln(colors);
 
-console.log(total);
+var person = {
+    firstName:"John",
+    lastName:"Doe",
+    age:50,
+    eyeColor:"blue"
+};
+document.writeln(person.firstName);
+
 document.writeln("Hello, JavaScript!");
+document.getElementById("demo").innerHTML = 5 + 6;
+	
+	
+
+
+
+
+
 </script>
 </body>
 </html>
